@@ -14,6 +14,7 @@ The focus is on precision, recall, and robust evaluation, rather than accuracy, 
     - 28 anonymized PCA components (V1–V28)
     - Time, Amount
     - Target variable: Class (0 = Normal, 1 = Fraud)
+
 ⚠️ The dataset is highly imbalanced, making metric selection and model tuning critical.
 
 ## 🧠 Machine Learning Workflow
@@ -22,30 +23,35 @@ The focus is on precision, recall, and robust evaluation, rather than accuracy, 
 - Analyzed class imbalance and feature distributions
 - Studied transaction amount and fraud patterns
 - Identified challenges related to skewed data
+
 📁 Notebook: EDA.ipynb
 
 ## 2️⃣ Baseline Model
 - Logistic Regression used as a baseline
 - Evaluated using precision and recall
 - Demonstrated why accuracy is misleading for imbalanced datasets
+
 📁 Notebook: baseline_logistic_regression.ipynb
 
 ## 3️⃣ Hyperparameter Tuning
 - Applied GridSearchCV
 - Used custom scoring metrics to balance precision and recall
 - Tuned class_weight to improve fraud detection sensitivity
+
 📁 Notebook: logistic_regression_gridsearch.ipynb
 
 ## 4️⃣ Tree-Based Model
 - Random Forest Classifier
 - Captured non-linear relationships
 - Compared performance against logistic regression
+
 📁 Notebook: random_forest.ipynb
 
 ## 5️⃣ Unsupervised Anomaly Detection
 - Isolation Forest
 - Explored fraud detection without labeled data
 - Highlighted limitations of unsupervised methods in this domain
+
 📁 Notebook: isolation_forest.ipynb
 
 ## 6️⃣ Model Comparison
@@ -55,6 +61,7 @@ The focus is on precision, recall, and robust evaluation, rather than accuracy, 
     - F1-score
     - ROC-AUC
 - Identified trade-offs between models
+
 📁 Notebook: model_comparison.ipynb
 
 ## In model_comparison_Results
